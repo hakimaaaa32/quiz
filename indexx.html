@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Quiz de Culture Générale</h1>
+        <div id="question-container">
+            <p id="question"></p>
+        </div>
+
+
+        <div id="answer-buttons">
+            <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 1</button>
+            <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 2</button>
+            <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 3</button>
+            <button class="answer-btn" onclick="checkAnswer(this.textContent)">Option 4</button>
+        </div>
+        
+       
+        <div id="result" style="margin: 20px;"></div>
+        
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Suivant</button>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
